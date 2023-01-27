@@ -67,6 +67,7 @@ SELECT * FROM cocuk;
 DELETE FROM cocuk
 WHERE id>124; -- Bu satirda belli sartlari saglayan verileri sildik.
 ROLLBACK TO CICEK; -- Bu satirda ise sildigimiz verileri kaydettigimiz alandan geri cagirdik.
+
 /* ============================= DELETE - TRUNCATE - DROP ================================   
   
   => TRUNCATE TABLE komutu tablodaki tum datalari kalici olarak siler
@@ -77,7 +78,7 @@ ROLLBACK TO CICEK; -- Bu satirda ise sildigimiz verileri kaydettigimiz alandan g
   
   1-) TRUNCATE komutu DELETE komutu gibi bir tablodaki verilerin tamamini siler.
     Ancak, secmeli silme yapamaz. Cunku Truncate komutu DML degil DDL komutudur.*/ 
-   
+   use sys;
        TRUNCATE TABLE cocuklar; -- dogru yazim
        DROP TABLE puanlar;
        DELETE FROM cocuklar
