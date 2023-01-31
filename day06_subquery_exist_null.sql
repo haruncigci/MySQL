@@ -190,6 +190,11 @@ from insanciklar
 order by adres desc,isim desc;
 
 
+ 
+
 -- 8: Insanciklar tablosundaki tüm kayitlari adresler ters sirali,
 -- isimler ters sirali , soyisimler ters sirali olarak siralayin..
-                
+
+select *
+from insanciklar
+order by adres desc ,isim desc,soyisim desc;
